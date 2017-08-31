@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Dom Excercise</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+     <div>
+        <div id="change">
+           <canvas id="myCanvas1" width="200" height="100" style="border:1px solid #000000;"></canvas> 
+        </div>
+        <div id="change1">
+           <canvas id="myCanvas2" width="200" height="100" style="border:1px solid #000000;"></canvas>           
+        </div>
+        <div id="change2">
+           <canvas id="myCanvas3" width="200" height="100" style="border:1px solid #000000;"></canvas>
+        </div>
+         <button type="submit" id="btn" value="Name" name="Colour">Colour</button>   
+     </div>
+            <div>
+            <input type="text" id="name" name="Names" value="Name" style="background-color:rgb(128,128,128);color:white"/>  
+            <button type="submit" id="button1" value="Name" name="Enter">Enter</button>
+           </div>
+        <div>
+            <select name="Occupation" style="background-color:rgb(90,90,90);color:white">
+                <option>Student</option>
+                <option>Teacher</option>
+                <option>Cleaner</option>
+                <option>Chef</option>
+                <option>HOD</option>
+            </select>
+            <button type="submit" id="button2" value="Occupation" name="Enter">Enter</button>
+        </div>
+        <div>
+          <table class="table" style="background-color:rgb(200,200,200);color:white">
+            <thead>
+              <tr><th>All Details</th></tr>
+            </thead>
+            <tbody id="tbody"></tbody>
+          </table>
+        </div>
+        <script src="dom1.js"></script>
+    </body>
+</html>
