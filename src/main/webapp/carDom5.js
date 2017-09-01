@@ -1,6 +1,5 @@
 //no 5 a and b
 function createCars(){
-
 var cars = [
   { id: 1, year: 1997, make: 'Ford', model: 'E350', price: 3000 },
   { id: 2, year: 1999, make: 'Chevy', model: 'Venture', price: 4900 },
@@ -11,8 +10,11 @@ var cars = [
  vartableRowsArray = cars.map(function(c){
          return "<tr><td>"+c.id +"</td><td>" +c.year + "</td><td>"+c.make + "</td><td>"+c.model+"</td><td>"+c.price+"</td></tr>"                                     //converting an array to table rows
      }).join("");
+    
  };
-
+ 
+   elm.addEventListener("onclick", function(),true);  
+     
 var filterValue= "";
 function filterCb(data){
     if(filterValue === " "){
@@ -23,6 +25,6 @@ function filterCb(data){
 function clickHandler(){
  filterValue = document.getElementById("filter").value;   
  }
- document.getElementById("button3").onclick(createCars); 
+  document.getElementById("button3").onclick(clickHandler);
  
 
